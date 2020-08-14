@@ -9,7 +9,7 @@
 
 .logo {
     text-decoration: none;
-    color: black;
+    color: var(--offWhite);
     padding: 5px;
     background-color: transparent;
     border: none;
@@ -103,6 +103,10 @@ h6 {
     margin-top: 3rem;
 }
 
+.loading img {
+    height: 50px;
+}
+
 .error {
     text-align: center;
     text-transform: uppercase;
@@ -134,7 +138,8 @@ h6 {
     left: 0;
     width: 100%;
     padding: 0.75rem 2rem;
-    background: var(--offWhite);
+    background: var(--mainBlack);
+    opacity: 0.8;
     z-index: 1;
 }
 
@@ -166,7 +171,7 @@ h6 {
     /* display: block; */
     text-decoration: none;
     padding: 1rem 0;
-    color: var(--mainBlack);
+    color: var(--offWhite);
     transition: var(--mainTransition);
     text-align: center;
     font-size: 1rem;
@@ -219,7 +224,7 @@ h6 {
 .defaultHero,
 .roomsHero {
     min-height: calc(100vh - 66px);
-    background: url("./images/defaultBcg.jpeg") center center/cover no-repeat;
+    background: url("https://images.unsplash.com/photo-1534080848166-040093a6828e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2534&q=80") center center/cover no-repeat;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -227,8 +232,9 @@ h6 {
 }
 
 .roomsHero {
-    background-image: url("./images/room-2.jpeg");
-    min-height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1593006526979-5f8814c229f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    min-height: 80vh;
+    object-fit: cover;
 }
 
 /* End of Hero */
@@ -317,7 +323,7 @@ h6 {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     grid-column-gap: 50px;
 }
 
@@ -409,7 +415,7 @@ h6 {
     color: var(--mainWhite);
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
-    font-size: 0.5rem;
+    font-size: 1rem;
     text-align: center;
     transition: var(--mainTransition);
 }
@@ -438,8 +444,14 @@ h6 {
 }
 
 .img-container:hover .price-top {
-    opacity: 0;
+    opacity: 5;
 }
+
+.img-container:hover,
+.room:hover {
+    cursor: pointer;
+}
+
 
 .img-container:hover .room-link {
     transform: translate(-50%, -50%) scale(1);

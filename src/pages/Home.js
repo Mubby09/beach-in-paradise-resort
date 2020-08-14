@@ -3,8 +3,9 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
+import FeaturedRoom from "../components/FeaturedRoom";
 
-const Home = ({ title, subtitle }) => {
+const Home = () => {
   return (
     <div>
       <Hero>
@@ -18,6 +19,7 @@ const Home = ({ title, subtitle }) => {
         </Banner>
       </Hero>
       <Services />
+      <FeaturedRoom />
     </div>
   );
 };
