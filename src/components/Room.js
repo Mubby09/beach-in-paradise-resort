@@ -4,7 +4,6 @@ import ImageOnError from "../images/room-2.jpeg";
 import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
-  console.log(room);
   const { name, images, price, slug } = room;
   return (
     <article className="room">

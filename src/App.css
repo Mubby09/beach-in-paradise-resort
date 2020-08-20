@@ -146,6 +146,7 @@ h6 {
 .nav-header {
     display: flex;
     justify-content: space-between;
+
 }
 
 .nav-btn {
@@ -184,7 +185,7 @@ h6 {
 }
 
 .show-nav {
-    height: 100px;
+    height: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -322,7 +323,7 @@ h6 {
     width: 90vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-row-gap: 1rem;
     grid-column-gap: 50px;
 }
@@ -492,6 +493,11 @@ h6 {
     display: grid;
     grid-template-columns: 1fr;
     margin: 2rem auto;
+}
+
+.desc {
+    border-right: 1px solid black;
+    padding-right: 10px;
 }
 
 .desc,
