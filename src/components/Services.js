@@ -7,6 +7,7 @@ import {
   FaCocktail,
   FaGolfBall
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 class Services extends Component {
   state = {
@@ -55,6 +56,9 @@ class Services extends Component {
               <p>{item.info}</p>
             </article>
           ))}
+          <Link to="/roomspage" className="go-to-rooms">
+            GO TO ROOMS
+          </Link>
         </div>
       </section>
     );
