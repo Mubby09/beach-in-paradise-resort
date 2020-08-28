@@ -7,6 +7,31 @@
     box-sizing: border-box;
 }
 
+.inquiry {
+    background-color: var(--primaryColor);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    grid-gap: 2rem;
+    height: 92vh
+}
+
+@media (max-width:500px) {
+    .inquiry {
+        height: 200vh;
+    }
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .logo {
     text-decoration: none;
     color: var(--offWhite);
